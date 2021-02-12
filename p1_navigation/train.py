@@ -1,3 +1,7 @@
+"""
+Module to traing RL agent.
+"""
+
 import argparse
 import random
 import torch

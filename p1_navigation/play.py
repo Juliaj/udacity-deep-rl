@@ -1,3 +1,6 @@
+"""
+Agent testing module via game play
+"""
 from unityagents import UnityEnvironment
 import numpy as np
 import torch

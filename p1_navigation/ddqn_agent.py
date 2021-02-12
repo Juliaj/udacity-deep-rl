@@ -1,3 +1,7 @@
+"""
+Agent based on DQN and DDQN training. 
+    - Adopted baseline code from Udacity Deep RL course.
+"""
 import numpy as np
 import random
 
