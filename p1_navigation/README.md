@@ -57,6 +57,6 @@ Running following command with the newly training agent to play 100 rounds of ga
 
 ```
 $ cd p1_navigation
-$ python play.py --algo ddqn   
+$ python play.py
 ```
 At the end of the game, average score from the play is printed out to console.
