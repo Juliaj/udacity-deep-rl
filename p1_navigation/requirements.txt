@@ -1,0 +1,5 @@
+numpy==1.19.2
+unityagents==0.4.0
+pandas==1.1.5
+matplotlib==3.3.2
+torch==1.7.1

@@ -1,0 +1,8 @@
+
+.ipynb_checkpoints
+.DS_Store
+.pylintrc
+__pycache__
+Banana.app
+Makefile
+*.log
