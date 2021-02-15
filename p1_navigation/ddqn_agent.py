@@ -105,7 +105,7 @@ class Agent():
 
     def learn(self, experiences, gamma):
         """
-        Update Q function parameters/weights using given batch of experiences 
+        Update Q function parameters/weights using given batch of experience
 
         Params
         ======

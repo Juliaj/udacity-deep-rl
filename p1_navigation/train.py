@@ -45,6 +45,7 @@ def run_training_loop(checkpoint_file: str, tp: TrainingParams, algo: str):
     ======
     checkpoint_file: file name for check pointing. 
     tp: a set of parameters for training 
+    algo: algorithm to use : ddqn or dqn
     """
     # setup environment
     env = UnityEnvironment(file_name="./Banana.app")
