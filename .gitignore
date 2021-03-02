@@ -6,3 +6,4 @@ __pycache__
 Banana.app
 Makefile
 *.log
+p2_continuous-control/Reacher* 
