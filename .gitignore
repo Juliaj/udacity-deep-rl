@@ -7,3 +7,4 @@ Banana.app
 Makefile
 *.log
 p2_continuous-control/Reacher* 
+p3_collab-compet-tennis/Tennis*
