@@ -111,7 +111,7 @@ Futher turning of the hyper parameters for models such as hidden layer size appl
 
 - [How to optimize Hyperparameters of Machine Learning Models](https://towardsdatascience.com/how-to-optimize-hyperparameters-of-machine-learning-models-98baec703593)
 
-Feedback from awesome review from Udacity, an effective way to improve the performance of (MA)DDPG is by using Prioritized Experience Replay. Check this [github repo](https://github.com/rlcode/per) for a fast implementation of Prioritized Experience Replay using a special data structure Sum Tree.
+Additional feedback from awesome reviewer from Udacity, an effective way to improve the performance of (MA)DDPG is by using Prioritized Experience Replay. Check this [github repo](https://github.com/rlcode/per) for a fast implementation of Prioritized Experience Replay using a special data structure Sum Tree.
 
 Below is a comparison of DDPG with random sampling vs DDPG with PER for the Reacher environment. It's quite evident how episode variation decreased and performance improved.
 
