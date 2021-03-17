@@ -123,6 +123,7 @@ Following posts give an insight into some other reinforcement learning algorithm
 [Introduction to Various Reinforcement Learning Algorithms. Part II (TRPO, PPO)](https://towardsdatascience.com/introduction-to-various-reinforcement-learning-algorithms-part-ii-trpo-ppo-87f2c5919bb9)
 
 ## Appendix
+- The recent achievement of the [Open AI group to play Dota 2](https://blog.openai.com/dota-2/) using Reinforcement Learning is a must read.
 
 - [Visdom](https://github.com/fossasia/visdom)
 
