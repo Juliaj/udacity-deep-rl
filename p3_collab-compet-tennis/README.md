@@ -57,6 +57,6 @@ After training is done, the model parameters are saved to two files: checkpoint_
 
 ```
 $ cd p3_collab-compet-tennis
-$ python play.py 
+$ python player.py 
 ```
 
