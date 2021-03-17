@@ -62,19 +62,19 @@ Critic(
 - Environment was solved in 1090 episodes with an average score of 0.5013.
 
 <p align="center">
-<img src="./runs/2021-03-16-215701/average_scores.png"  width="350" height="200">
+<img src="./runs/2021-03-16-215701/average_scores.png"  width="550" height="400">
 </p>
 
 - Scores 
 <p align="center">
-<img src="./runs/2021-03-16-215701/scores.png"  width="350" height="200">
+<img src="./runs/2021-03-16-215701/scores.png"  width="550" height="400">
 </p>
 
 - Losses
 <p align="center">
-<img src="./runs/2021-03-16-215701/loss_actor.png"  width="180" height="120">
+<img src="./runs/2021-03-16-215701/loss_actor.png"  width="280" height="220">
 
-<img src="./runs/2021-03-16-215701/loss_critic.png"  width="180" height="120">
+<img src="./runs/2021-03-16-215701/loss_critic.png"  width="280" height="220">
 </p>
 
 ## Learnings 
