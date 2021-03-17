@@ -61,21 +61,12 @@ Critic(
 
 - Environment was solved in 1090 episodes with an average score of 0.5013.
 
-<p align="center">
-<img src="./runs/2021-03-16-215701/average_scores.png"  width="550" height="400">
-</p>
+![alt-text-1](./runs/2021-03-16-215701/average_scores.png "Avearge Scores") ![alt-text-2](./runs/2021-03-16-215701/scores.png "Scores")
 
-- Scores 
-<p align="center">
-<img src="./runs/2021-03-16-215701/scores.png"  width="550" height="400">
-</p>
 
 - Losses
-<p align="center">
-<img src="./runs/2021-03-16-215701/loss_actor.png"  width="280" height="220">
+![alt-text-1](./runs/2021-03-16-215701/loss_actor.png "Actor loss") ![alt-text-2](./runs/2021-03-16-215701/loss_critic.png "Critic loss")
 
-<img src="./runs/2021-03-16-215701/loss_critic.png"  width="280" height="220">
-</p>
 
 ## Learnings 
 
@@ -93,26 +84,18 @@ Parameter|Value|Description|
 |critic_fcs1_units|512|Critic network, units for 2nd hidden layer|
 
 p3_collab-compet-tennis/runs/
-- Average Scores and Raw Scores
-<p align="center">
-<img src="./runs/2021-03-16-231207/average_scores.png"  width="180" height="120">
+- Scores
+![alt-text-1](./runs/2021-03-16-231207/average_scores.png "Avearge Scores") ![alt-text-2](./runs/2021-03-16-231207/scores.png "Scores")
 
-<img src="./runs/2021-03-16-231207/scores.png"  width="180" height="120">
-</p>
 
 - Losses
-<p align="center">
-<img src="./runs/2021-03-16-231207/loss_actor.png"  width="180" height="120">
+![alt-text-1](./runs/2021-03-16-231207/loss_actor.png "Actor loss") ![alt-text-2](./runs/2021-03-16-231207/loss_critic.png "Critic loss")
 
-<img src="./runs/2021-03-16-231207/loss_critic.png"  width="180" height="120">
-</p>
 
 - Actions
-<p align="center">
-<img src="./runs/2021-03-16-231207/actions_dim0.png"  width="350" height="100">
+![alt-text-1](./runs/2021-03-16-231207/actions_dim0.png "Actions - dim 0") 
+![alt-text-2](./runs/2021-03-16-231207/actions_dim1.png "Actions - dim 1")
 
-<img src="./runs/2021-03-16-231207/actions_dim1.png"  width="350" height="100">
-</p>
                               
 ## Future Directions
 
