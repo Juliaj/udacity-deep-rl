@@ -65,6 +65,7 @@ Critic(
 
 
 - Losses
+
 ![alt-text-1](./runs/2021-03-16-215701/loss_actor.png "Actor loss") ![alt-text-2](./runs/2021-03-16-215701/loss_critic.png "Critic loss")
 
 
@@ -85,14 +86,17 @@ Parameter|Value|Description|
 
 p3_collab-compet-tennis/runs/
 - Scores
+
 ![alt-text-1](./runs/2021-03-16-231207/average_scores.png "Avearge Scores") ![alt-text-2](./runs/2021-03-16-231207/scores.png "Scores")
 
 
 - Losses
+
 ![alt-text-1](./runs/2021-03-16-231207/loss_actor.png "Actor loss") ![alt-text-2](./runs/2021-03-16-231207/loss_critic.png "Critic loss")
 
 
 - Actions
+
 ![alt-text-1](./runs/2021-03-16-231207/actions_dim0.png "Actions - dim 0") 
 ![alt-text-2](./runs/2021-03-16-231207/actions_dim1.png "Actions - dim 1")
 
