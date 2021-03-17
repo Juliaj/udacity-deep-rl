@@ -111,6 +111,17 @@ Futher turning of the hyper parameters for models such as hidden layer size appl
 
 - [How to optimize Hyperparameters of Machine Learning Models](https://towardsdatascience.com/how-to-optimize-hyperparameters-of-machine-learning-models-98baec703593)
 
+Feedback from awesome review from Udacity, an effective way to improve the performance of (MA)DDPG is by using Prioritized Experience Replay. Check this [github repo](https://github.com/rlcode/per) for a fast implementation of Prioritized Experience Replay using a special data structure Sum Tree.
+
+Below is a comparison of DDPG with random sampling vs DDPG with PER for the Reacher environment. It's quite evident how episode variation decreased and performance improved.
+
+![alt-text-1](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/340137/1539945086/PER_vs_Random_sampling.png)
+
+Following posts give an insight into some other reinforcement learning algorithms that can be used to solve the environment. 
+
+[Proximal Policy Optimization by Open AI](https://blog.openai.com/openai-baselines-ppo/ )
+[Introduction to Various Reinforcement Learning Algorithms. Part II (TRPO, PPO)](https://towardsdatascience.com/introduction-to-various-reinforcement-learning-algorithms-part-ii-trpo-ppo-87f2c5919bb9)
+
 ## Appendix
 
 - [Visdom](https://github.com/fossasia/visdom)
