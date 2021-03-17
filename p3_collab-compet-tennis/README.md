@@ -44,7 +44,12 @@ pip install -r requirements.txt
 
 ```
 $ cd p3_collab-compet-tennis
+
+# run with default settings
 $ python trainer.py 
+
+# run with Visdom for visualization
+python trainer.py --max_t 5000 --num_episodes 10000 --hyperparams hp1.yaml --vis
 ```
 After training is done, the model parameters are saved to two files: checkpoint_actor.pth and checkpoint_critic.pth. You can also find a correspoing score plot generated.
 

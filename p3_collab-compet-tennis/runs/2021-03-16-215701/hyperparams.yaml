@@ -1,0 +1,18 @@
+!!python/object:hyperparams.HyperParams
+actor_fc1_units: 32
+actor_fc2_units: 32
+batch_size: 512
+buffer_size: 1000000
+clamp_value: 1
+clip_grad: true
+critic_fc2_units: 64
+critic_fcs1_units: 64
+gamma: 0.95
+lr_actor: 0.001
+lr_critic: 0.001
+seed: 48
+sigma: 0.1
+tau: 0.02
+update_every: 1
+use_batchnorm: false
+weight_decay: 0

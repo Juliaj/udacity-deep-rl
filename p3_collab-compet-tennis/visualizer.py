@@ -1,10 +1,14 @@
-# Credits: https://github.com/katnoria/unityml-tennis
-#
+"""
+Publish to Visdom : https://github.com/fossasia/visdom
+    Credits: https://github.com/katnoria/unityml-tennis
+"""
+
 from collections import defaultdict
 import visdom
 
 # Do not print error messages if visdom client throws error
 IGNORE_VISDOM_ERROR = 10
+
 
 class VisdomWriter:
     """Class to publish data to Visdom"""
@@ -34,15 +38,18 @@ class VisdomWriter:
         """
         if self.enabled:
             try:
-                self.vis.text(data, win=title, opts=dict(title=title))  
+                self.vis.text(data, win=title, opts=dict(title=title))
                 self.visdom_error_count = 0
             except Exception as e:
                 self.visdom_error_count += 1
                 if (self.visdom_error_count < IGNORE_VISDOM_ERROR):
                     if self.logger:
-                        self.logger.error('Failed to publish text to visdom server: {}'.format(e))
+                        self.logger.error(
+                            'Failed to publish text to visdom server: {}'.
+                            format(e))
                     else:
-                        print('Failed to publish text to visdom server: {}'.format(e))                            
+                        print('Failed to publish text to visdom server: {}'.
+                              format(e))
 
         if self.logger:
             self.logger.debug('{}: {}'.format(title, data))
@@ -58,17 +65,23 @@ class VisdomWriter:
         """
         if self.enabled:
             self.ydict[key].append(item)
-            self.xdict[key].append(len(self.ydict[key]))            
+            self.xdict[key].append(len(self.ydict[key]))
             try:
-                self.vis.line(Y=self.ydict[key], X=self.xdict[key], win=key, opts=dict(title=key))
+                self.vis.line(Y=self.ydict[key],
+                              X=self.xdict[key],
+                              win=key,
+                              opts=dict(title=key))
                 self.visdom_error_count = 0
             except Exception as e:
                 self.visdom_error_count += 1
                 if self.visdom_error_count < IGNORE_VISDOM_ERROR:
                     if self.logger:
-                        self.logger.error('Failed to publish data to visdom server: {}'.format(e))
+                        self.logger.error(
+                            'Failed to publish data to visdom server: {}'.
+                            format(e))
                     else:
-                        print('Failed to publish data to visdom server: {}'.format(e))
+                        print('Failed to publish data to visdom server: {}'.
+                              format(e))
 
         if self.logger:
             self.logger.debug('{}: {}'.format(key, item))

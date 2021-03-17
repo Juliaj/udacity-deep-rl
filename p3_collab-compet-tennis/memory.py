@@ -14,7 +14,7 @@ device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
 
 class ReplayBuffer:
     """Fixed-size buffer to store experience tuples."""
-    def __init__(self, buffer_size, batch_size, seed):
+    def __init__(self, buffer_size: int, batch_size: int, seed: int):
         """Initialize a ReplayBuffer object
         Params
         =====

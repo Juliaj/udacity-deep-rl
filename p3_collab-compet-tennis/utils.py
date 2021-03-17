@@ -4,10 +4,11 @@ Module for utility methods.
 from datetime import datetime
 import logging
 import json
+import yaml
+
 import torch
 import hyperparams as hp
 from visualizer import VisdomWriter
-
 
 logger = logging.getLogger(__name__)
 device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
@@ -42,15 +43,23 @@ def hard_update(source_model, target_model):
         target_param.data.copy_(source_param.data)
 
 
-def path_gen(hparams: hp.HyperParams):
-    """Generate a string with datetime and parameters passed in
-    Params:
-        hparams: trainng HyperParams
+def path_gen():
+    """Generate a folder path with current date time
     """
-    now = datetime.now()
-    now = '{:%Y_%m%d_%H%M}'.format(now)
-    path = f'{now}_lr_actor{hparams.lr_actor:e}_lr_critic{hparams.lr_critic:e}_batch{hparams.batch_size}'
-    return path
+    now = datetime.now().strftime('%Y-%m-%d-%H%M%S')
+    return f'runs/{now}'
+
+
+def load_from_yaml(fname):
+    hyperparams = None
+    with open(fname, 'r') as f:
+        hyperparams = yaml.safe_load(f)
+    return hyperparams
+
+
+def save_to_yaml(dict_item, fname):
+    with open(fname, 'w') as f:
+        yaml.dump(dict_item, f, default_flow_style=False)
 
 
 # Credits https://github.com/katnoria/unityml-tennis
@@ -62,23 +71,24 @@ def flatten(tensor):
         -1,
     ))
 
-# Credits https://github.com/katnoria/unityml-tennis
-def save_to_json(dict_item, fname):
-    with open(fname, 'w') as f:
-        json.dump(dict_item, f)
 
 # Credits https://github.com/katnoria/unityml-tennis
 def save_to_txt(item, fname):
     with open(fname, 'a') as f:
         f.write('{}\n'.format(item))
 
+
 # Credits https://github.com/katnoria/unityml-tennis
 class VisWriter:
-    """Dummy Visdom Writer"""
-    def __init__(self, vis=True):
+    """Wrapper of Visdom Writer
+    Params
+    =====
+    vis: False when running without Visdom
+    """
+    def __init__(self, vis: bool = False):
         self.vis = vis
         if self.vis:
-            self.writer = VisdomWriter(enabled=True, logger=logger)      
+            self.writer = VisdomWriter(enabled=True, logger=logger)
 
     def text(self, message, title):
         if self.vis:
